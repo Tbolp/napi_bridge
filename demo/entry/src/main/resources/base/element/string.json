@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "napi bridge demo"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "napi bridge demo"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "demo"
+    }
+  ]
+}
