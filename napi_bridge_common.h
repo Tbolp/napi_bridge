@@ -38,8 +38,8 @@ std::string j2c<std::string>(napi_env env, napi_value jval) {
   std::string result;
   size_t len;
   napi_get_value_string_utf8(env, jval, nullptr, 0, &len);
-  result.resize(len - 1);
-  napi_get_value_string_utf8(env, jval, (char*)result.c_str(), len, &len);
+  result.resize(len);
+  napi_get_value_string_utf8(env, jval, (char*)result.c_str(), len + 1, &len);
   return result;
 }
 
